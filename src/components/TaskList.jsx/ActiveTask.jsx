@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NewTask = ({task}) => {
+const ActiveTask = ({task}) => {
   return (
     <div
       id="tasklist-child"
@@ -18,4 +18,4 @@ const NewTask = ({task}) => {
   );
 }
 
-export default NewTask
+export default ActiveTask
