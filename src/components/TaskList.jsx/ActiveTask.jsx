@@ -14,6 +14,14 @@ const ActiveTask = ({task}) => {
       </div>
       <h2 className="mt-5 text-2xl font-semibold">{task?.title}</h2>
       <p className="text-sm mt-2 ">{task?.description}</p>
+      <div className="flex justify-between mt-20 text-sm">
+        <button className="bg-emerald-700 px-2 py-1 rounded">
+          Mark as Completed
+        </button>
+        <button className="bg-red-700 px-2 py-1 rounded">
+          Mark as Failed
+        </button>
+      </div>
     </div>
   );
 }

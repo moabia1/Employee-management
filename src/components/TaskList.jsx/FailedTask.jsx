@@ -14,6 +14,9 @@ const FailedTask = ({task}) => {
       </div>
       <h2 className="mt-5 text-2xl font-semibold">{task?.title}</h2>
       <p className="text-sm mt-2 ">{task?.description}</p>
+      <div className='mt-2'>
+        <button className='w-full'>Failed</button>
+      </div>
     </div>
   );
 }

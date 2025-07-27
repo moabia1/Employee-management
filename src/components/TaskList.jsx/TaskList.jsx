@@ -6,11 +6,12 @@ import CompleteTask from "./CompleteTask";
 import FailedTask from "./FailedTask";
 
 const TaskList = () => {
-  const Usertasks = useContext(AuthContext);
-  console.log(Usertasks)
-  const employees = Usertasks.employee.find((e) => e.email);
-  console.log(employees)
-  const tasks = employees.tasks;
+  
+  const {userData} = useContext(AuthContext);
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  const employee = userData.employee.find((e) => e.email == loggedInUser.email);
+  const tasks = employee.tasks;
+
   return (
     <div
       id="tasklist"

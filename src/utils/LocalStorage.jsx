@@ -1,8 +1,8 @@
-const employees = [
+const employee = [
   {
     id: 1,
     username: "rahul_sharma",
-    email: "123@m.com",
+    email: "m@m.com",
     password: "123",
     taskCount: {
       active: 1,
@@ -287,7 +287,7 @@ const employees = [
     taskCount: {
       active: 1,
       newTask: 1,
-      completed: 2,
+      completed: 4,
       failed: 1,
       pending: 1,
     },
@@ -361,12 +361,12 @@ const admin = [
 ];
 
 export const setLocalStorage = () => {
-  localStorage.setItem("employees", JSON.stringify(employees));
+  localStorage.setItem("employee", JSON.stringify(employee));
   localStorage.setItem("admin", JSON.stringify(admin));
 };
 
 export const getLocalStorage = () => {
-  const employee = JSON.parse(localStorage.getItem("employees"));
+  const employee = JSON.parse(localStorage.getItem("employee"));
   const admin = JSON.parse(localStorage.getItem("admin"));
 
   return { employee, admin };
