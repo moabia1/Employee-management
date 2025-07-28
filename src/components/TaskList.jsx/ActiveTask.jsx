@@ -4,7 +4,7 @@ const ActiveTask = ({task}) => {
   return (
     <div
       id="tasklist-child"
-      className="flex-shrink-0 h-full bg-green-300 w-[25%] rounded-xl p-3 overflow-y-auto"
+      className="flex-shrink-0 h-full bg-cyan-300 w-[25%] rounded-xl p-3 overflow-y-auto"
     >
       <div className="flex justify-between items-center">
         <h3 className="bg-red-600 text-sm font-semibold px-2 py-1 rounded">
