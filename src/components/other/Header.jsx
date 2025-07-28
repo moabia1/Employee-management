@@ -6,9 +6,9 @@ const Header = () => {
 
   const { userData, setUser, user } = useContext(AuthContext);
   
-  const logged = JSON.parse(localStorage.getItem('loggedInUser'))
-  const employee = userData.employee.find((e) => e.email == logged.email);
-  const admin = userData.admin.find((e) => e.email == logged.email);
+  const logged = JSON.parse(localStorage.getItem('loggedInUser'));
+  const employee = userData?.employee.find((e) => e.email == logged.email);
+  const admin = userData?.admin.find((e) => e.email == logged.email);
 
   const handleLogout = () => {
     localStorage.removeItem("loggedInUser");
@@ -20,7 +20,7 @@ const Header = () => {
       <h1 className="text-2xl font-medium">
         Hello <br />{" "}
         <span className="text-3xl font-semibold">
-          {logged.role == "admin" ? admin.username : employee.username}👋
+          {logged?.role == "admin" ? admin?.username : employee?.username}👋
         </span>
       </h1>
       <button

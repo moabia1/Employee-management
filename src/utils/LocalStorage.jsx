@@ -1,4 +1,4 @@
-const employee = [
+export const defaultEmployee = [
   {
     id: 1,
     username: "rahul_sharma",
@@ -351,7 +351,7 @@ const employee = [
   },
 ];
 
-const admin = [
+export const defaultAdmin = [
   {
     id: 1,
     username: "admin_Morkal",
@@ -361,13 +361,17 @@ const admin = [
 ];
 
 export const setLocalStorage = () => {
-  localStorage.setItem("employee", JSON.stringify(employee));
-  localStorage.setItem("admin", JSON.stringify(admin));
+  // Only set defaults if not already present
+  const existing = JSON.parse(localStorage.getItem("userData"));
+  if (!existing) {
+    localStorage.setItem(
+      "userData",
+      JSON.stringify({ employee: defaultEmployee, admin: defaultAdmin })
+    );
+  }
 };
 
 export const getLocalStorage = () => {
-  const employee = JSON.parse(localStorage.getItem("employee"));
-  const admin = JSON.parse(localStorage.getItem("admin"));
-
-  return { employee, admin };
+  const data = JSON.parse(localStorage.getItem("userData"));
+  return data || { employee: [], admin: [] };
 };

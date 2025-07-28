@@ -17,9 +17,9 @@ const AllTask = () => {
         <h5 className="text-lg font-semibold w-1/5">Failed Task</h5>
       </div>
       <div className="overflow-auto">
-        {userData.employee.map((elem) => {
+        {userData.employee.map((elem,idx) => {
           return (
-            <div className="border-2 border-emerald-600 py-2 px-4 flex items-center rounded mb-3 font-black">
+            <div key={idx} className="border-2 border-emerald-600 py-2 px-4 flex items-center rounded mb-3 font-black">
               <h2 className="w-1/5 text-white font-medium">{elem.username}</h2>
               <h3 className="ml-15 w-1/5 text-blue-500">{elem.taskCount.newTask}</h3>
               <h5 className="ml-15 w-1/5 text-yellow-400">{elem.taskCount.active}</h5>
