@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AuthContext } from "../../context/AuthProvider";
+import AuthProvider, { AuthContext } from "../../context/AuthProvider";
 import ActiveTask from "./ActiveTask";
 import NewTask from "./NewTask";
 import CompleteTask from "./CompleteTask";
@@ -7,7 +7,7 @@ import FailedTask from "./FailedTask";
 
 const TaskList = () => {
   
-  const {userData} = useContext(AuthContext);
+  const { userData, setUserData } = useContext(AuthContext);
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
   const employee = userData.employee.find((e) => e.email == loggedInUser.email);
   const tasks = employee.tasks;
@@ -19,10 +19,10 @@ const TaskList = () => {
     >
       {tasks.map((elem,idx) => {
         if (elem?.active) {
-          return <ActiveTask key={idx} task={elem}/>
+          return <ActiveTask key={idx} task={elem} userData={userData} setUserData={setUserData}/>
         }
         if (elem?.newTask) {
-          return <NewTask key={idx} task={elem}/>
+          return <NewTask key={idx} task={elem} userData={userData} setUserData={setUserData}/>
         }
         if (elem?.completed) {
           return <CompleteTask key={idx} task={elem}/>

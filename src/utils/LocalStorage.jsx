@@ -13,6 +13,7 @@ export const defaultEmployee = [
     },
     tasks: [
       {
+        id: 1,
         active: true,
         newTask: false,
         completed: false,
@@ -24,6 +25,7 @@ export const defaultEmployee = [
         category: "Reporting",
       },
       {
+        id: 2,
         active: false,
         newTask: true,
         completed: false,
@@ -35,6 +37,7 @@ export const defaultEmployee = [
         category: "Presentation",
       },
       {
+        id: 3,
         active: false,
         newTask: false,
         completed: true,
@@ -46,6 +49,7 @@ export const defaultEmployee = [
         category: "Client",
       },
       {
+        id: 4,
         active: false,
         newTask: false,
         completed: true,
@@ -57,6 +61,7 @@ export const defaultEmployee = [
         category: "Admin",
       },
       {
+        id: 5,
         active: false,
         newTask: false,
         completed: false,
@@ -83,6 +88,7 @@ export const defaultEmployee = [
     },
     tasks: [
       {
+        id: 1,
         active: true,
         newTask: false,
         completed: false,
@@ -94,6 +100,7 @@ export const defaultEmployee = [
         category: "Design",
       },
       {
+        id: 2,
         active: false,
         newTask: true,
         completed: false,
@@ -105,6 +112,7 @@ export const defaultEmployee = [
         category: "Planning",
       },
       {
+        id: 3,
         active: false,
         newTask: false,
         completed: true,
@@ -116,6 +124,7 @@ export const defaultEmployee = [
         category: "Communication",
       },
       {
+        id: 4,
         active: false,
         newTask: false,
         completed: true,
@@ -127,6 +136,7 @@ export const defaultEmployee = [
         category: "Testing",
       },
       {
+        id: 5,
         active: false,
         newTask: false,
         completed: false,
@@ -153,6 +163,7 @@ export const defaultEmployee = [
     },
     tasks: [
       {
+        id: 1,
         active: true,
         newTask: false,
         completed: false,
@@ -164,6 +175,7 @@ export const defaultEmployee = [
         category: "Marketing",
       },
       {
+        id: 2,
         active: false,
         newTask: true,
         completed: false,
@@ -175,6 +187,7 @@ export const defaultEmployee = [
         category: "Planning",
       },
       {
+        id: 3,
         active: false,
         newTask: false,
         completed: true,
@@ -186,6 +199,7 @@ export const defaultEmployee = [
         category: "Support",
       },
       {
+        id: 4,
         active: false,
         newTask: false,
         completed: true,
@@ -197,6 +211,7 @@ export const defaultEmployee = [
         category: "Content",
       },
       {
+        id: 5,
         active: false,
         newTask: false,
         completed: false,
@@ -223,6 +238,7 @@ export const defaultEmployee = [
     },
     tasks: [
       {
+        id: 1,
         active: true,
         newTask: false,
         completed: false,
@@ -234,6 +250,7 @@ export const defaultEmployee = [
         category: "Web",
       },
       {
+        id: 2,
         active: false,
         newTask: true,
         completed: false,
@@ -245,6 +262,7 @@ export const defaultEmployee = [
         category: "DevOps",
       },
       {
+        id: 3,
         active: false,
         newTask: false,
         completed: true,
@@ -256,6 +274,7 @@ export const defaultEmployee = [
         category: "Logistics",
       },
       {
+        id: 4,
         active: false,
         newTask: false,
         completed: true,
@@ -267,6 +286,7 @@ export const defaultEmployee = [
         category: "Development",
       },
       {
+        id: 5,
         active: false,
         newTask: false,
         completed: false,
@@ -293,6 +313,7 @@ export const defaultEmployee = [
     },
     tasks: [
       {
+        id: 1,
         active: true,
         newTask: false,
         completed: false,
@@ -304,6 +325,7 @@ export const defaultEmployee = [
         category: "HR",
       },
       {
+        id: 2,
         active: false,
         newTask: true,
         completed: false,
@@ -315,6 +337,7 @@ export const defaultEmployee = [
         category: "Recruitment",
       },
       {
+        id: 3,
         active: false,
         newTask: false,
         completed: true,
@@ -326,6 +349,7 @@ export const defaultEmployee = [
         category: "Project",
       },
       {
+        id: 4,
         active: false,
         newTask: false,
         completed: true,
@@ -337,6 +361,7 @@ export const defaultEmployee = [
         category: "HR",
       },
       {
+        id: 5,
         active: false,
         newTask: false,
         completed: false,
