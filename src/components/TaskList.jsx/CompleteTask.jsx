@@ -14,8 +14,10 @@ const CompleteTask = ({task}) => {
       </div>
       <h2 className="mt-5 text-2xl font-semibold">{task?.title}</h2>
       <p className="text-sm mt-2 ">{task?.description}</p>
-      <div className='mt-2'>
-        <button className='w-full'>Completed</button>
+      <div className="mt-2">
+        <button className='w-full px-2 py-1 mt-18 text-center rounded text-sm bg-green-700'>
+          Completed
+        </button>
       </div>
     </div>
   );
